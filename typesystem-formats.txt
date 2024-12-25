@@ -1,0 +1,383 @@
+MOSA的命令：
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/MOSA \
+	--report_dir ./test_outputs/typesystem/formats/MOSA \
+	--maximum_search_time 600 \
+	--algorithm MOSA -v
+	
+CODAMOSA的命令：
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tldm_25 \
+	--report_dir ./test_outputs/typesystem/formats/tldm_25 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_max_plateau_len_limit True \
+	--testing_max_plateau_len 25 \
+	--testing_max_plateau_len_limit_dynamic_monitoring True \
+	--i 0
+
+-------------------------------------------------------------------------------
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/ir_05 \
+	--report_dir ./test_outputs/typesystem/formats/ir_05 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--large_language_model_seeding True \
+	 --initializing_random True \
+	--initializing_random_probability 0.05 \
+ 	--i 0
+
+
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/ir_10 \
+	--report_dir ./test_outputs/typesystem/formats/ir_10 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name CodeLlama-13b-Python-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--large_language_model_seeding True \
+	 --initializing_random True \
+	--initializing_random_probability 1.0 \
+ 	--i 0
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/ir_5 \
+	--report_dir ./test_outputs/typesystem/formats/ir_5 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--large_language_model_seeding True \
+	 --initializing_random True \
+	--initializing_random_probability 0.5 \
+ 	--i 0
+
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tr_10 \
+	--report_dir ./test_outputs/typesystem/formats/tr_10 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name CodeLlama-13b-Python-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_random True \
+	--testing_random_probability 1.0 \
+	--i 0
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tr_5 \
+	--report_dir ./test_outputs/typesystem/formats/tr_5 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_random True \
+	--testing_random_probability 0.5 \
+	--i 0
+
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tl_25 \
+	--report_dir ./test_outputs/typesystem/formats/tl_25 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_max_plateau_len_limit True \
+	--testing_max_plateau_len 25 \
+	--i 0
+
+
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tl_800 \
+	--report_dir ./test_outputs/typesystem/formats/tl_800 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name CodeLlama-13b-Python-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_max_plateau_len_limit True \
+	--testing_max_plateau_len 800 \
+	--i 0
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tldm_5 \
+	--report_dir ./test_outputs/typesystem/formats/tldm_5 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name CodeLlama-13b-Python-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_max_plateau_len_limit True \
+	--testing_max_plateau_len 5 \
+	--testing_max_plateau_len_limit_dynamic_monitoring True \
+	--i 0
+	
+----------------------------------------------------------------------------------
+	
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/irdm_10 \
+	--report_dir ./test_outputs/typesystem/formats/irdm_10 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--large_language_model_seeding True \
+	--initializing_random True \
+	--initializing_random_dynamic_monitoring True \
+	--i 0
+	
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tr_1 \
+	--report_dir ./test_outputs/typesystem/formats/tr_1 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_random True \
+	--testing_random_probability 0.1 \
+	--i 0
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/trdm_10 \
+	--report_dir ./test_outputs/typesystem/formats/trdm_10 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_random True \
+	--testing_random_dynamic_monitoring True \
+	--i 0
+	
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tl_5 \
+	--report_dir ./test_outputs/typesystem/formats/tl_5 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name Llama-2-7b-chat-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_max_plateau_len_limit True \
+	--testing_max_plateau_len 5 \
+	--i 0
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tl_50 \
+	--report_dir ./test_outputs/typesystem/formats/tl_50 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name CodeLlama-13b-Python-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_max_plateau_len_limit True \
+	--testing_max_plateau_len 50 \
+	--i 0
+
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tl_200 \
+	--report_dir ./test_outputs/typesystem/formats/tl_200 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name CodeLlama-13b-Python-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_max_plateau_len_limit True \
+	--testing_max_plateau_len 200 \
+	--i 0
+	
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/tr_005 \
+	--report_dir ./test_outputs/typesystem/formats/tr_005 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name CodeLlama-13b-Python-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--testing_random True \
+	--testing_random_probability 0.005 \
+	--i 0
+	
+
+python ./pynguin/__main__.py \
+	--project_path ./test_modules/typesystem \
+	--module_name typesystem.formats \
+	--output_path ./test_outputs/typesystem/formats/ir_1 \
+	--report_dir ./test_outputs/typesystem/formats/ir_1 \
+	--maximum_search_time 600 \
+	--create_coverage_report True \
+	--algorithm CODAMOSA -v \
+	--include-partially-parsable True \
+	--allow-expandable-cluster True \
+	--uninterpreted_statements ONLY \
+	--temperature 0.8 \
+	--authorization_key empty \
+	--model_name CodeLlama-13b-Python-hf \
+	--model_base_url http://chat.iteale.com:19017 \
+	--model_relative_url /v1/completions \
+	--large_language_model_seeding True \
+	 --initializing_random True \
+	--initializing_random_probability 0.1 \
+ 	--i 0
+
